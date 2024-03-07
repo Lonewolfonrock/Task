@@ -1,0 +1,59 @@
+body{
+    margin: 0px;
+}
+.Herosection{
+    padding-top: 5%;
+    background-color: #EEEEEE;
+    padding-bottom: 15%;
+    overflow: hidden;
+}
+.Herosection> .Herosection_sizing{
+    display: flex;
+    justify-content: center;
+    margin: 0% 7% 0% 0%;
+    position: relative;
+}
+.heroimage{
+  max-width: 60%;
+  width: 35%;
+  margin: 0px 30px 0% 60%; 
+  position: absolute;
+  transition: 1s;
+}
+.Herosection> .Herosection_sizing> .Hero_content{
+    margin: 5% 0% 0 0%;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: x-large;
+}
+.Hero_content>h1{
+    margin: 0;    
+}
+.Herosection> .Herosection_sizing> .Hero_content> #Hero_sub{
+    font-size: 15px;
+    margin-right: 30%;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+@media screen and (max-width: 768px) {
+
+    .heroimage {
+      max-width: 70%;
+      width: 40%;
+      min-width: 150px;
+      margin: 0px 0px 0% 50%;
+    }
+    .Herosection> .Herosection_sizing> .Hero_content{
+        margin: 5% 0% 0 0%;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 400;
+        font-size: medium;
+    }
+    .Herosection> .Herosection_sizing> .Hero_content> #Hero_sub{
+        font-size: 10px;
+        margin-right:50%;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;   
+    }
+}
