@@ -1,6 +1,22 @@
 body{
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;   
+
 }
+
+/************ same property shareing **********<: */
+p{
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size: 15px;
+    color:#808080;
+}
+h2{
+    font-size: 220%;
+}
+
+
+
+/* ****************Hero section****************** <: */
 .Herosection{
     padding-top: 5%;
     background-color: #EEEEEE;
@@ -15,7 +31,7 @@ body{
     position: relative;
 }
 
-.heroimage{
+.Heroimage{
   max-width: 60%;
   width: 35%;
   margin: 0px 30px 0% 60%; 
@@ -35,13 +51,64 @@ body{
     font-size: 15px;
     margin-right: 30%;
     line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif;   
 }
+.other1{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/************* Bellow hero section  1 ************<: */
+
+.Below_Hero1{
+    padding-top: 8%;
+    text-align: center;
+}
+.Below_Hero1>h1,h2,h3{
+    font-family: "Roboto Mono", monospace;
+}
+.Below_Hero1>p{
+    color:#808080;
+}
+.Imageother1{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin: 20px 0px;
+    border: 1px solid rgb(168, 168, 168);
+}
+.other1_sub>div{
+  margin: 0px 8%;
+}
+.other1_sub:hover{
+    cursor: pointer;
+    background-color: #f0eeee;
+    transition: 0.1s;
+}
+.other1_sub>div>label{
+    font-size: x-large;
+    font-weight: 500;
+    
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width: 800px) {/* For smaller screen */
 
-    .heroimage {
+    p{
+        font-family: Arial, Helvetica, sans-serif;   
+        font-size: 10px;
+    }
+
+    .Heroimage {
       max-width: 50%;
       width: 40%;
       min-width: 150px;
@@ -54,7 +121,6 @@ body{
         font-size: medium;
     }
     .Herosection> .Herosection_sizing> .Hero_content> #Hero_sub{
-        font-size: 10px;
         margin-right:50%;
         line-height: 1.5;
         font-family: Arial, Helvetica, sans-serif;   
@@ -63,7 +129,7 @@ body{
 
 @media screen and (max-width: 1000px) {/* For tablet screen */
     
-    .heroimage {
+    .Heroimage {
       width: 30%;
     }
     .Herosection> .Herosection_sizing> .Hero_content{
