@@ -103,17 +103,18 @@ label{
     display: flex;
     justify-content: center;
     margin: 0 6%;
+    padding-bottom: 8%;
 }
 
 #heroimg2{
     width: 100%;
     max-width: 700px;
     height: auto;
-    max-height: 500px;
+    max-height: 600px;
     object-fit: cover;
 }
 .Below_Hero2_content{
-    margin: 8% 0 0 8%;
+    margin: 8% 0% 0 8%;
 
 }
 .Below_Hero2>.Below_Hero2_content>div>h2{
@@ -121,10 +122,24 @@ label{
 }
 
 .hero2_sub_lable{
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(61, 55, 55);
 }
+.Below_Hero2_content>div>p{
+    margin: 4% 10% 0 0;
+}
 
+#btn1{
+    margin-top: 8%;
+    background-color: white;
+    padding: 3% 8%;
+    font-size: 17px;
+}
+#btn1:hover{
+    cursor: pointer;
+    transition: 0.1s;
+    background-color: rgb(241, 241, 241);
+}
 
 
 
