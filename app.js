@@ -2,19 +2,26 @@ const slide = document.querySelectorAll(".heroimage");
 let counter = 1;
 
 slide.forEach((slide, index) => {
-    slide.style.top = "0";
   slide.style.top = `${index * 180}%`; 
 });
 
 const slideImage = () => {
-    slide.forEach((slide) => {
-        if(window.innerWidth<=700){
-            slide.style.transform = `translateY(-${(counter - 1) * 250}%)`;
+    const getTranslateY = (counter, windowWidth) => {
+        switch (true) {
+            case windowWidth < 500:
+                return (counter - 1) * 270;
+            case windowWidth < 830:
+                return (counter - 1) * 220;
+            case windowWidth < 1200:
+                return (counter - 1) * 160;
+            default:
+                return (counter - 1) * 120;
         }
-        else{
-            slide.style.transform = `translateY(-${(counter-1) * 120}%)`;
+    };
 
-        }
+    slide.forEach((slide) => {
+        const translateY = getTranslateY(counter, window.innerWidth);
+        slide.style.transform = `translateY(-${translateY}%)`;
     });
 };
 
@@ -26,10 +33,10 @@ const sliderGenerator = () => {
             counter = 1;
         }
         slideImage();
-    }, 5000);
+    }, 4000);
 };
 
 sliderGenerator();
+//120 //200 // 250
 
 
-//120 //200
