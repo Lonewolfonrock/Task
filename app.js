@@ -28,7 +28,7 @@ const slideImage = () => {
 const sliderGenerator = () => {
     setInterval(() => {
         counter++;
-        console.log(counter)
+        console.log(counter);
         if (counter > 2) {
             counter = 1;
         }
@@ -38,5 +38,33 @@ const sliderGenerator = () => {
 
 sliderGenerator();
 //120 //200 // 250
+
+
+
+const initialuser1 = document.querySelector(".users1");
+const initialuser2 = document.querySelector(".users2");
+const initialuser3 = document.querySelector(".users3");
+
+
+moveSlider=(value)=>{
+
+    const user1 = document.querySelector(".users1");
+    const user2 = document.querySelector(".users2");
+    const user3 = document.querySelector(".users3");
+    
+
+    if(value=='l'){
+        var temp = user2.innerHTML;
+        user2.innerHTML=user1.innerHTML;
+        user1.innerHTML=temp;
+    }
+    else if(value=='r'){
+        var temp =user2.innerHTML;
+        user2.innerHTML=user3.innerHTML;
+        user3.innerHTML=temp;
+    }
+
+}
+
 
 

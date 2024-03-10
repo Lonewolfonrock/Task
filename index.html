@@ -7,10 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>Task site</title>
 </head>
 <body>
-    <div class="Herosection">
+    <div class="Herosection" id="hero">
         <div class="Herosection_sizing">
             <div class="Hero_content">
                 <h1>TITLE</h1>
@@ -33,6 +35,7 @@
         <h2 style="margin-top: 1%; margin-bottom: 3%;">TITTLE</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
         <div class="other1">
+            
             <div class="other1_sub">
                 <img src="images/Images_other1/c-d-x-PDX_a_82obo-unsplash.jpg" alt="" srcset="" class="Imageother1">
                 <div>
@@ -152,8 +155,7 @@
 
     <!--*******************************************************************-->
     
-    <div class="form_section">
-        
+    <div class="form_section">  
         <div class="section_A">
             <label>LABLE</label>
             <h2 style="margin-bottom: 0px;">TITTLE</h2>
@@ -162,15 +164,78 @@
                 <p class="hero2_sub_lable" style=" margin-top: 0; background-color: #EEEEEE; padding: 4%;" id="formT1">TITTLE TEXT</p>
                 <p style="margin-left: 5%; word-spacing: 1px;" id="formT2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit officiis exercitationem, minima autem iste et expedita sequi.minima autem iste et expedita sequi  </p>
             </div>
-            <input type="text" placeholder="TITTLE TEXT" class="form_input"><br>
-            <input type="text" placeholder="TITTLE TEXT" class="form_input"><br>
+            <p type="text" class="form_p">TITTLE TEXT</P>
+            <p type="text" class="form_p" >TITTLE TEXT</P>
         </div>
         <img src="images/uriel-soberanes-MxVkWPiJALs-unsplash.jpg" alt="" srcset="" id="formimage">
-
-
-
-
     </div>
+
+   
+    <!--*******************************************************************-->
+
+
+    <div class="review_section">
+       
+        <h2 style="margin: 0px;">TITTLE</h2>
+        <h2 style="margin: 0px;">TITTLE</h2>
+        
+            <div id="sliderContainer" class="users_revievw" >
+                <div class="users1">
+                    <p style="color: black; font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed labore nam fugiat. Harum, illo corrupti earum odit consectetur accusamus enim qui repellat vitae veritatis rem ?</p>
+                    <strong style="font-size: 18px;">Sumit Khakda</strong><br>
+                    <label style="font-size: 13px;">Designer</label>
+                </div>   
+                <div class="users2">
+                    <p style="color: black; font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed labore nam fugiat. Harum, illo corrupti earum odit consectetur accusamus enim qui repellat vitae veritatis rem ?</p>
+                    <strong style="font-size: 18px;">Anjesh Mainali</strong><br>
+                    <label style="font-size: 13px;">Developer</label>
+                </div>   
+                <div class="users3">
+                    <p style="color: black; font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed labore nam fugiat. Harum, illo corrupti earum odit consectetur accusamus enim qui repellat vitae veritatis rem ?</p>
+                    <strong style="font-size: 18px;">Rishav Karna</strong><br>
+                    <label style="font-size: 13px;">Manager</label>
+                </div>   
+            </div>
+            <a href="javascript:void(0)" class="review_section_link" onclick="moveSlider('r')">
+            <span class="material-symbols-outlined" id="right1">
+               arrow_forward_ios
+            </span>
+            </a>
+            <a href="#hero" class="review_section_link">
+                <span class="material-symbols-outlined" id="reset">
+                    home
+                    </span>
+                </a>
+            <a href="javascript:void(0)" class="review_section_link" onclick="moveSlider('l')" >
+            <span class="material-symbols-outlined" id="left1"  >
+                arrow_back_ios
+            </span>
+            </a>     
+    </div>
+    <div>
+        <div class="Product_section2">
+            <div class="video">
+                <iframe  class="video_frame" src="https://www.youtube.com/embed/m4-HM_sCvtQ?si=SuAT-y927PqMqMRV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video_frame"  src="https://www.youtube.com/embed/pPStdjuYzSI?si=GYkpuluMwrd_YQJ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+           <div class="product_section_image">
+                <img src="images/Images_other1/c-d-x-PDX_a_82obo-unsplash.jpg" alt="" srcset="" class="Imageother2">
+                <img src="images/Images_other1/joseph-greve-D_1-g2eLho8-unsplash.jpg" alt="" srcset="" class="Imageother2">
+                <img src="images/Images_other1/lee-campbell-GI6L2pkiZgQ-unsplash.jpg" alt="" srcset="" class="Imageother2">
+                <img src="images/Images_other1/christian-wiediger-TErYPw4o1KM-unsplash.jpg" alt="" srcset="" class="Imageother2" > 
+           </div>
+
+        </div>
+
+
+
+
+    
+    </div>
+
+
+
+
     
     <script src="app.js"></script>
 </body>
