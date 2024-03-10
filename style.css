@@ -67,15 +67,15 @@ label{
 
 
 /************* Bellow hero section  1 ************<: */
-.other1_sub>div>p{
-    font-size: 15px;
-    width: 100%;
-    max-width: 180px;
-
-}
 .Below_Hero1{
-    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 30px;
+
+    
 }
 .Below_Hero1>h1,h2,h3{
     font-family: "Roboto Mono", monospace;
@@ -91,16 +91,11 @@ label{
     object-fit: cover;
     margin: 20px 10px;
 }
-.other1_sub>div{
-  margin: 0px 20%;
+.other1_sub>div>p{
+    margin: 0px 10%;
 }
-.other1_sub:hover{
-    cursor: pointer;
-}
-.other1_sub>div>label{
-    font-size: x-large;
-    font-weight: 500; 
-}
+
+
 
 
 /************* Bellow hero section  2 ************<: */
@@ -298,25 +293,26 @@ label{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .video_frame{
     max-width: 100%;
-    width: 550px;
+    width: 560px;
     height: 350px;
     max-height: 500px;
     margin: 0 0 0 8px;
 }
 .product_section_image{
-    
+    margin-top: 8%;
 }
-.Imageother2{
+.product_section_image>img{
     width: 100%;
-    max-width: 260px;
+    max-width: 280px;
     height: auto;
-    max-height: 200px;
     object-fit: cover;
-    margin: 7% 10px;
 }
+
+
 
 
 
@@ -385,6 +381,7 @@ label{
     #formT2{
         font-size: 10px;
     }
+  
     
 
 }
