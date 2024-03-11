@@ -223,10 +223,11 @@ label{
     border: 2px solid rgb(179, 179, 179);
     z-index: 1;
 }
-.material-symbols-outlined:hover{
+.material-symbols-outlined:hover,button:hover{
     background-color: #aaff49;
     color: white;
     transition: 0.2s;
+    cursor: pointer;
 }
 #right1{
     bottom: 120px;
@@ -354,33 +355,50 @@ label{
 /*Footer section*/
 .footer{
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     background-color: #EEEEEE;
     justify-content: center;
+    font-size: 12px;
+    
 }
 #section_one,#section_two,#section_three,#section_four{
     display: flex;
     flex-direction: column;
-    max-width: 450px;
-
+    max-width: 450px ;
+    margin: 0px 3%;
 }
-#section_four{
-    display: flex;
-    flex-direction: column;
-    
+ .p_foo{
+    color: black;
+    margin: 2% 0%;
+} 
+.p_foo_1{
+    margin:40px 10px 45px 0px;
+    color: black;
+    font-size: 16px;
+} 
+.footer>div>a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 4px 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+#section_four{   
+    width: 400px;
+}
+#section_four>P{
+    color: black;
+    width: 80%;
+}
+input{
+    font-size: 15px;
+    padding: 2% 6%;
+    border-radius: 6px;
+}
+button{
+    border-radius: 4px;
+    padding: 2% 5%;
+}
 
 @media screen and (max-width: 800px) {/* For smaller screen */
     h2{
@@ -446,6 +464,10 @@ label{
     .bellow_footersection>div{
         flex-direction: column;
      }
+
+
+     /*Footer section*/
+     
     
     
 }
