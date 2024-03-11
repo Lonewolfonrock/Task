@@ -274,6 +274,7 @@ label{
     background-color: #ffffff;
     z-index: 1; 
     border: 2px solid #E9E9E9;
+    color: black;
 
 }
 
@@ -388,7 +389,7 @@ label{
 }
 #section_four>P{
     color: black;
-    width: 80%;
+    width: 100%;
 }
 input{
     font-size: 15px;
@@ -401,6 +402,21 @@ button{
 }
 
 @media screen and (max-width: 800px) {/* For smaller screen */
+
+    .users1{
+        width: 60%;
+        left: 0%;
+    }
+
+
+   #sliderContainer{
+    flex-wrap: wrap;
+   }
+
+    .Product_container_sub{
+        height: 180px;
+    }
+
     h2{
         font-size: 120%;
     }
