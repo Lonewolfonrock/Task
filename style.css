@@ -143,7 +143,7 @@ label{
 }
 
 /****************Product section  *********************** <:*/
-.Product_section{
+#Product_section{
     background-color: #EEEEEE;
     text-align: center;
     padding-bottom: 5%;
@@ -170,7 +170,7 @@ label{
 }
 
 /****************form section  *********************** <:*/
-.form_section{
+#form_section{
     padding-top: 10%;
     display: flex;
     padding-bottom: 0%;
@@ -209,7 +209,7 @@ label{
 }
 /**************** review section  *********************** <:*/
 
-.review_section{
+#review_section{
     text-align: center;
     padding-top: 10%;
     background-color: #EEEEEE;
@@ -242,7 +242,7 @@ label{
     left: 0px;
 }
 
-.review_section>a{
+#review_section>a{
     color: black;
     text-decoration: none;
 }
@@ -288,7 +288,7 @@ label{
 
 
 /**************** product section 2  *********************** <:*/
-.Product_section2{
+#Product_section2{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,12 +305,71 @@ label{
 .product_section_image{
     margin-top: 8%;
 }
-.product_section_image>img{
+.Imageother2{
     width: 100%;
     max-width: 280px;
     height: auto;
     object-fit: cover;
 }
+
+
+/*bellow fottersection*/
+.Imageother3{
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit:fill;
+}
+.bellow_footersection{
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bellow_footersection>div{
+   display: flex;
+   justify-content: center;
+}
+.bellow_footersection_images{
+    margin: 0 2%;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+.bellow_footersection_images>.image_details{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2%;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    left: 7%;
+    top: 45%;
+    border: 1px solid black;
+    box-shadow: 1px 10px;
+}
+
+
+/*Footer section*/
+.footer{
+    display: flex;
+    padding: 20px;
+    background-color: #EEEEEE;
+    justify-content: center;
+}
+#section_one,#section_two,#section_three,#section_four{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+
+}
+#section_four{
+    display: flex;
+    flex-direction: column;
+    
+}
+
 
 
 
@@ -381,9 +440,14 @@ label{
     #formT2{
         font-size: 10px;
     }
-  
+    .Imageother2{
+        max-width: 80px;
+    }
+    .bellow_footersection>div{
+        flex-direction: column;
+     }
     
-
+    
 }
 
 @media screen and (max-width: 1000px) {/* For tablet screen */
